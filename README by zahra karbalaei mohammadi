@@ -1,0 +1,12 @@
+1. A summary of the purpose as well as the function of the code
+
+In this research, an algorithm for changing the voice of people has been presented, which can easily take the voice of a person with a specific content and have the voice of another person with a different content next to it, and at the end, the first content with the voice of the second person as the output. to give
+The function of the code is completely algorithmic and does not have any input or output as sound. Therefore, in the future, they can use this algorithm in voice conversion tasks.
+
+2. The rate of innovation in code improvement
+
+Due to the fact that this project did not have any input and output, I found a similar work in the link https://colab.research.google.com/github/yiftachbeer/AdaIN-VC/blob/master/notebooks/demo.ipynb#scrollTo=RmNTzr2Fds5l which can show the performance of this project well.
+Also, according to the studies, I found that if AdaIN-VC is used with AGAIN-VC, it can greatly reduce the dimensions and prevent the speaker information from leaking into the content embeddings.
+
+3. Things that have been changed and improved in the source code
+
