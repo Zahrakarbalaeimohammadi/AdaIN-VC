@@ -10,3 +10,6 @@ Also, according to the studies, I found that if AdaIN-VC is used with AGAIN-VC, 
 
 3. Things that have been changed and improved in the source code
 
+There were no specific bugs in the original source code, and most of the problems were related to pycodestyle, which I tried to fix as much as possible.
+New source code to show the performance of the algorithm:
+
