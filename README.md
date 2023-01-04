@@ -77,19 +77,19 @@ Please cite the paper if you find AdaIN-VC useful.
 }
 ```
 ## Sections added by Zahra Karbalaei Mohammadi
-1. A summary of the purpose as well as the function of the code
+## 1. A summary of the purpose as well as the function of the code
 
 In this research, an algorithm for changing the voice of people has been presented, which can easily take the voice of a person with a specific content and have the voice of another person with a different content next to it, and at the end, the first content with the voice of the second person as the output. to give
 The function of the code is completely algorithmic and does not have any input or output as sound. Therefore, in the future, they can use this algorithm in voice conversion tasks.
 
 
-2. The rate of innovation in code improvement
+## 2. The rate of innovation in code improvement
 
 Due to the fact that this project did not have any input and output, I found a similar work in the link https://colab.research.google.com/github/yiftachbeer/AdaIN-VC/blob/master/notebooks/demo.ipynb#scrollTo=RmNTzr2Fds5l which can show the performance of this project well.
 Also, according to the studies, I found that if AdaIN-VC is used with AGAIN-VC, it can greatly reduce the dimensions and prevent the speaker information from leaking into the content embeddings.
 
 
-3. Things that have been changed and improved in the source code
+## 3. Things that have been changed and improved in the source code
 
 There were no specific bugs in the original source code, and most of the problems were related to pycodestyle, which I tried to fix as much as possible.
 New source code to show the performance of the AdaIN-VC algorithm:
@@ -132,18 +132,18 @@ Audio('cvrt-pretrained.wav')
 Reference to the project: https://colab.research.google.com/github/yiftachbeer/AdaIN-VC/blob/master/notebooks/demo.ipynb#scrollTo=KVcBHvvfV9s-
 
 
-4. The result of changing and improving the code in evaluating the output audio file
+## 4. The result of changing and improving the code in evaluating the output audio file
 
 After solving these problems, no other problems were observed in Visual Studio Code, but because the work is coded as an algorithm, we had no sound input or output.
 I was only able to check the codes and fix the errors and problems according to the Visual Studio Code guidelines to improve the coding.
 
 
-5. Reference to the main project link
+## 5. Reference to the main project link
 
 https://github.com/cyhuang-tw/AdaIN-VC
 
 
-6. Student introduction
+## 6. Student introduction
 
 Zahra karbalaei mohammadi is a master's student from South Tehran University
 
@@ -154,14 +154,14 @@ Digital signal processing course
 Supervisor: Dr. Mahdi Eslami
 
 
-7. The article file has been updated
+## 7. The article file has been updated
 
 Link to download the comparison table of advantages and disadvantages of the method used in 10 articles with similar topics: https://drive.google.com/file/d/1senPl-zaLvEdadwrADIY5Ibc84KInL_0/view?usp=share_link
 
 Download link of the introduction of the new article: https://drive.google.com/file/d/1DQQAOIRcSbO8AzGZWcIVnzyrnj3OjqAG/view?usp=share_link
 
 
-8. Explanation videos about project code and articles
+## 8. Explanation videos about project code and articles
 
 Video file link for a general explanation about the article: https://drive.google.com/file/d/1Dj-tNs13g7Z3m3rBQ18mCPBXiyZSz6KJ/view?usp=sharing
 
@@ -181,7 +181,7 @@ All the videos related to my project to promote science have been uploaded to Ap
 Aparat link: https://www.aparat.com/Zahrakarbalaeimohammadi
 
 
-9. Completed proposal file for the project
+## 9. Completed proposal file for the project
 
 Download link: 
 
