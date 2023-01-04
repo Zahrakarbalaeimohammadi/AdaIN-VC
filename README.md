@@ -77,3 +77,112 @@ Please cite the paper if you find AdaIN-VC useful.
 }
 ```
 ## Sections added by Zahra Karbalaei Mohammadi
+1. A summary of the purpose as well as the function of the code
+
+In this research, an algorithm for changing the voice of people has been presented, which can easily take the voice of a person with a specific content and have the voice of another person with a different content next to it, and at the end, the first content with the voice of the second person as the output. to give
+The function of the code is completely algorithmic and does not have any input or output as sound. Therefore, in the future, they can use this algorithm in voice conversion tasks.
+
+
+2. The rate of innovation in code improvement
+
+Due to the fact that this project did not have any input and output, I found a similar work in the link https://colab.research.google.com/github/yiftachbeer/AdaIN-VC/blob/master/notebooks/demo.ipynb#scrollTo=RmNTzr2Fds5l which can show the performance of this project well.
+Also, according to the studies, I found that if AdaIN-VC is used with AGAIN-VC, it can greatly reduce the dimensions and prevent the speaker information from leaking into the content embeddings.
+
+
+3. Things that have been changed and improved in the source code
+
+There were no specific bugs in the original source code, and most of the problems were related to pycodestyle, which I tried to fix as much as possible.
+New source code to show the performance of the AdaIN-VC algorithm:
+
+# AdaIN-VC demo
+This is a demonstration of AdaIN-VC that should work out of the box and be fairly quick to setup.
+
+## Code Setup
+!git clone https://github.com/yiftachbeer/AdaIN-VC
+%cd AdaIN-VC
+%%capture
+
+!python -m pip install -r requirements.txt
+## Data Setup
+#We download a custom, smaller version of VCTK (all utterances of 5 speakers out of 110).
+%%capture
+
+!wget https://www.cs.huji.ac.il/~yiftach/VCTKmini.zip
+!unzip VCTKmini.zip && rm VCTKmini.zip
+
+%run adain-vc.py preprocess VCTKmini/wav48_silence_trimmed VCTKmini_mel
+
+## Training
+#The `n_steps` parameter can be adjusted depending on how long you want to wait. 
+
+%run adain-vc.py train config.yaml VCTKmini_mel saved_models --n_steps 1000 --save_steps 100
+
+## Inference
+from IPython.display import Audio
+#We use the first sample for content, and the second for speaker:
+Audio('VCTKmini/p226/p226_002_mic2.flac')
+Audio('VCTKmini/p225/p225_003_mic2.flac')
+
+#We demonstrate the quality of the pretrained model along with the one we just trained:
+%run adain-vc.py inference VCTKmini/p226/p226_002_mic2.flac VCTKmini/p225/p225_003_mic2.flac cvrt-trained.wav --model_path saved_models/model-1000.ckpt
+%run adain-vc.py inference VCTKmini/p226/p226_002_mic2.flac VCTKmini/p225/p225_003_mic2.flac cvrt-pretrained.wav
+Audio('cvrt-trained.wav')
+Audio('cvrt-pretrained.wav')
+
+Reference to the project: https://colab.research.google.com/github/yiftachbeer/AdaIN-VC/blob/master/notebooks/demo.ipynb#scrollTo=KVcBHvvfV9s-
+
+
+4. The result of changing and improving the code in evaluating the output audio file
+
+After solving these problems, no other problems were observed in Visual Studio Code, but because the work is coded as an algorithm, we had no sound input or output.
+I was only able to check the codes and fix the errors and problems according to the Visual Studio Code guidelines to improve the coding.
+
+
+5. Reference to the main project link
+
+https://github.com/cyhuang-tw/AdaIN-VC
+
+
+6. Student introduction
+
+Zahra karbalaei mohammadi is a master's student from South Tehran University
+
+student number: 40014140111030
+
+Digital signal processing course
+
+Supervisor: Dr. Mahdi Eslami
+
+
+7. The article file has been updated
+
+Link to download the comparison table of advantages and disadvantages of the method used in 10 articles with similar topics: https://drive.google.com/file/d/1senPl-zaLvEdadwrADIY5Ibc84KInL_0/view?usp=share_link
+
+Download link of the introduction of the new article: https://drive.google.com/file/d/1DQQAOIRcSbO8AzGZWcIVnzyrnj3OjqAG/view?usp=share_link
+
+
+8. Explanation videos about project code and articles
+
+Video file link for a general explanation about the article: https://drive.google.com/file/d/1Dj-tNs13g7Z3m3rBQ18mCPBXiyZSz6KJ/view?usp=sharing
+
+Video link for a detailed explanation of the article: https://drive.google.com/file/d/1UAlZrxqV7mTjHeamGqRVoJ2YErcp-zPM/view?usp=sharing
+
+Video file general explanation about the main parts of the source and code database and the environment and software required to run the code: https://drive.google.com/file/d/1wytASSQn8NkKPPeb_t8BlzIFMRxnuWVC/view?usp=sharing
+
+Video file link explaining about the code and matching it with the article: https://drive.google.com/file/d/18sz51-JWXAwIVSdhsA0BptDeGtr9HQTd/view?usp=sharing
+
+Link to the video file of the source code execution and explanation about the input and output of the final project: https://drive.google.com/file/d/1U7PZy5zF4mX2T4OMar-OgltCig1yvK4V/view?usp=drivesdk
+
+The link of the input and output file in another similar project that uses the algorithm of my final project: https://drive.google.com/drive/folders/1fY-dxzlGMZGa0sGDEVHKmRQQNKZ9tLFq
+
+
+All the videos related to my project to promote science have been uploaded to Aparat
+
+Aparat link: https://www.aparat.com/Zahrakarbalaeimohammadi
+
+
+9. Completed proposal file for the project
+
+Download link: 
+
+https://drive.google.com/file/d/10ofAt50bEqUU1LrLRz96W2oYHmpbMS94/view?usp=share_link
