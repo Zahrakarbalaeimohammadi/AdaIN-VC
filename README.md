@@ -186,3 +186,9 @@ Aparat link: https://www.aparat.com/Zahrakarbalaeimohammadi
 Download link: 
 
 https://drive.google.com/file/d/10ofAt50bEqUU1LrLRz96W2oYHmpbMS94/view?usp=share_link
+
+## All the tasks done for the progress of the project
+
+Download link: 
+
+https://drive.google.com/drive/folders/11PUIKewGp8iGzwEpmLxETaU9BjT11w9k?usp=share_link
