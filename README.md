@@ -192,3 +192,9 @@ https://drive.google.com/file/d/10ofAt50bEqUU1LrLRz96W2oYHmpbMS94/view?usp=share
 Download link: 
 
 https://drive.google.com/drive/folders/11PUIKewGp8iGzwEpmLxETaU9BjT11w9k?usp=share_link
+
+## The link to the final project presentation
+
+Download link:
+
+https://drive.google.com/file/d/1tAifYf3gw-dHjTh8-AiT9OIJT3JETlk3/view?usp=share_link
